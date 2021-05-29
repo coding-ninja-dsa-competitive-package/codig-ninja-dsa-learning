@@ -1,10 +1,6 @@
 #include<iostream>
 using namespace std;
 
-void updateValue(int *p){
-    *p = 610 % 255;
-}
-
 //typecasting
 void problem1(){
     int i=65;
@@ -24,12 +20,17 @@ void problem1(){
     cout << "*(pc+2) : " << *(pc+2) << endl;
     cout << "*(pc+3) : " << *(pc+3) << endl;
     cout<<"========================"<<endl;
+}
 
+void updateValue(int *p){
+    *p = 610 % 255;
+}
+void problem2(){
     char ch = 'A';
     updateValue((int*)&ch);
     cout << ch << endl; //d
-    cout<<"========================"<<endl;
 }
+
 
 int main(){
     //TypeCasting 

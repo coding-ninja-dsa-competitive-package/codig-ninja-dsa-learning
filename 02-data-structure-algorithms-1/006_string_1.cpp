@@ -34,7 +34,7 @@ void problem1(){
 }
 
 /**
- *  all subsequences of a string
+ *  All subsequences of a string
  */
 int subsequences(string input, string output[]){
     if(input.empty()){
@@ -70,8 +70,10 @@ void problem2(){
 }
 
 /**
- *  Given an integer n, using phone keypad find out all the possible strings that can be made 
- *  using digits of input n. Return empty string for numbers 0 and 1.
+ *  Return Keypad Code
+ *  -   Given an integer n, using phone keypad find out all the possible 
+ *      strings that can be made using digits of input n. Return empty string 
+ *      for numbers 0 and 1.
  *  Note : 
  *      1. The order of strings are not important.
  *      2. Input and output has already been managed for you. 
@@ -92,17 +94,6 @@ int keypad(int num, string output[]){
     }
     return smallerOutputSize*str.size();
 }
-void print_keypad(int num, string output){
-    if(num == 0){
-        cout << output << " ";
-        return;
-    }
-    string arr[] = {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
-    string str = arr[num%10];
-    for(int i=0; i<str.size(); i++){
-        print_keypad(num/10, str[i]+output);
-    }
-}
 void problem3(){
     int num;
     cin >> num;
@@ -112,22 +103,48 @@ void problem3(){
     for(int i = 0; i < count && i < 10000; i++){
         cout << output[i] << " ";
     }
-    cout<< endl << "========================"<<endl;
+}
 
-    string out;
+/**
+ *  Print Keypad Combinations Code
+ *  -   Given an integer n, using phone keypad find out and print all the 
+ *      possible strings that can be made using digits of input n.
+ *  -   Note : The order of strings are not important. Just print different 
+ *      strings in new lines.
+ */
+void print_keypad(int num, string output){
+    if(num == 0){
+        cout << output << endl;
+        return;
+    }
+    string arr[] = {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+    string str = arr[num%10];
+    for(int i=0; i<str.size(); i++){
+        print_keypad(num/10, str[i]+output);
+    }
+}
+void printKeypad(int num){
+	string out;
     print_keypad(num, out);
-    cout<< endl << "========================"<<endl;
+}
+void problem4(){
+    int num;
+    cin >> num;
+    printKeypad(num);
 }
 
 int main(){
     // basics of string data type
-    //problem1();
+    // problem1();
 
-    //subsequences of a string
-    //problem2();
+    // subsequences of a string
+    // problem2();
 
-    //keypad subsequences combination
-    problem3();
+    // keypad subsequences combination
+    // problem3();
+
+    // Print Keypad Combinations Code
+    problem4();
 
     return 0;
 }

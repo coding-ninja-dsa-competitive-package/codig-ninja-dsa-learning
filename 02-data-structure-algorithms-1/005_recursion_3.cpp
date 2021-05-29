@@ -5,8 +5,10 @@ using namespace std;
 #include<climits>
 
 /**
- *  Given an input string S and two characters c1 and c2, you need to replace every 
- *  occurrence of character c1 with character c2 in the given string.
+ *  Replace Character Recursively
+ *  -   Given an input string S and two characters c1 and c2, you need to 
+ *      replace every occurrence of character c1 with character c2 in the 
+ *      given string.
  */
 void replaceCharacter(char input[], char c1, char c2) {
     if(input[0] == '\0'){
@@ -17,7 +19,7 @@ void replaceCharacter(char input[], char c1, char c2) {
     }
     replaceCharacter(input+1, c1, c2);
 }
-void assignment1() {
+void problem1() {
     char input[1000000];
     char c1, c2;
     cin >> input;
@@ -27,7 +29,8 @@ void assignment1() {
 }
 
 /**
- *  Given a string S, remove consecutive duplicates from it recursively.
+ *  Remove Duplicates Recursively
+ *  -   Given a string S, remove consecutive duplicates from it recursively.
  */
 void removeConsecutiveDuplicates(char *input) {
 	if(input[0] == '\0'){
@@ -42,7 +45,7 @@ void removeConsecutiveDuplicates(char *input) {
         input[i] = '\0';
     }
 }
-void assignment2() {
+void problem2   () {
     char s[100000];
     cin >> s;
     removeConsecutiveDuplicates(s);
@@ -51,6 +54,8 @@ void assignment2() {
 
 /**
  *  Merge Sort
+ *  -   Sort an array A using Merge Sort.
+ *  -   Change in the input array itself. So no need to return or print anything.
  */
 void merge(int arr[], int start, int mid, int end){
     int *temp = new int[end-start+1];
@@ -87,7 +92,7 @@ void mergeSortFun(int arr[], int start, int end){
 void mergeSort(int input[], int size){
 	mergeSortFun(input, 0, size-1);        
 }
-void assignment3(){
+void problem3(){
     int length;
     cin >> length;
     int* input = new int[length];
@@ -101,6 +106,8 @@ void assignment3(){
 
 /**
  *  Quick Sort
+ *  -   Sort an array A using Quick Sort.
+ *  -   Change in the input array itself. So no need to return or print anything.
  */
 int partition(int input[], int start, int end){
     int pivot = input[start], count=0;
@@ -142,7 +149,7 @@ void quickSortFun(int input[], int start, int end){
 void quickSort(int input[], int size) {
 	quickSortFun(input, 0, size-1);
 }
-void assignment4(){
+void problem4(){
     int n;
     cin >> n;
     int *input = new int[n];
@@ -157,10 +164,17 @@ void assignment4(){
 }
 
 int main(){
-    //assignment1();
-    //assignment2();
-    //assignment3();
-    //assignment4();
+    // Replace Character Recursively
+    // problem1();
 
+    // Remove Duplicates Recursively
+    // problem2();
+
+    // Merge Sort
+    // problem3();
+
+    // Quick Sort
+    problem4();
+    
     return 0;
 }

@@ -1,9 +1,14 @@
 #include<iostream>
+#include<cstring>
+
 using namespace std;
 
 /**
- *  Given two integers M & N, calculate and return their multiplication using recursion. 
- *  You can only use subtraction and addition for your calculation. No other operators are allowed.
+ *  Multiplication (Recursive)
+ *  -   Given two integers M & N, calculate and return their multiplication 
+ *      using recursion. 
+ *  -   You can only use subtraction and addition for your calculation. No 
+ *      other operators are allowed.
  */
 int multiplyNumbers(int m, int n) {
     if(n == 0){
@@ -18,7 +23,9 @@ void assignment1(){
 }
 
 /**
- *  Given an integer N, count and return the number of zeros that are present in the given integer using recursion.
+ *  Count Zeros
+ *  -   Given an integer N, count and return the number of zeros that are present 
+ *      in the given integer using recursion.
  */
 int countZeros(int n) {
    if(n<10){
@@ -51,8 +58,9 @@ void assignment2(){
 }
 
 /**
- *  Given k, find the geometric sum i.e.
- *      1 + 1/2 + 1/4 + 1/8 + ... + 1/(2^k) 
+ *  Geometric Sum
+ *  -   Given k, find the geometric sum i.e.
+ *          1 + 1/2 + 1/4 + 1/8 + ... + 1/(2^k) 
  */
 #include<cmath>
 #include<iomanip>
@@ -71,7 +79,9 @@ void assignment3() {
 }
 
 /**
- *  Check whether a given String S is a palindrome using recursion. Return true or false.
+ *  Check Palindrome (recursive)
+ *  -   Check whether a given String S is a palindrome using recursion. 
+ *      Return true or false.
  */
 #include<cstring>
 bool isPalindrome(char input[], int start , int end){
@@ -100,7 +110,8 @@ void assignment4(){
 }
 
 /**
- *  Write a recursive function that returns the sum of the digits of a given integer.
+ *  Sum of digits (recursive)
+ *  -   Write a recursive function that returns the sum of the digits of a given integer.
  */
 int sumOfDigits(int n) {
 	if(n == 0){
@@ -116,8 +127,9 @@ void assignment5() {
 }
 
 /**
- *  Given a string, compute recursively a new string where all appearances of "pi" 
- *  have been replaced by "3.14".
+ *  Replace pi (recursive)
+ *  -   Given a string, compute recursively a new string where all 
+ *      appearances of "pi" have been replaced by "3.14".
  */
 void replacePi(char input[]) {
 	if(input[0] == '\0'){
@@ -145,20 +157,17 @@ string replacePiV2(string input) {
     }
     return input[0]+res;
 }
-void assignment6() {
-    // char input[10000];
-    // cin.getline(input, 10000);
-    // replacePi(input);
-    // cout << input << endl;
-
-    string s;
-    cin >> s;
-    string res = replacePiV2(s);
-    cout << res << endl;
+void assignment6(){
+    char input[10000];
+    cin.getline(input, 10000);
+    replacePi(input);
+    cout << input << endl;
 }
 
 /**
- *  Given a string, compute recursively a new string where all 'x' chars have been removed.
+ *  Remove X
+ *  -   Given a string, compute recursively a new string where all 'x' chars 
+ *      have been removed.
  */
 void removeX(char input[]) {
     if(input[0] == '\0'){
@@ -174,7 +183,7 @@ void removeX(char input[]) {
         input[i] ='\0';
     }
 }
-void assignment7() {
+void assignment7(){
     char input[100];
     cin.getline(input, 100);
     removeX(input);
@@ -182,27 +191,32 @@ void assignment7() {
 }
 
 /**
- *  Write a recursive function to convert a given string into the number it represents. 
- *  That is input will be a numeric string that contains only numbers, you need to convert 
- *  the string into corresponding integer and return the answer.
+ *  String to Integer
+ *  -   Write a recursive function to convert a given string into the number 
+ *      it represents. That is input will be a numeric string that contains 
+ *      only numbers, you need to convert the string into corresponding integer 
+ *      and return the answer.
  */
+#include<cmath>
 int stringToNumber(char input[]) {
     if(input[0]== '\0'){
         return 0;
     }
     int ans = stringToNumber(input+1);
     int len = strlen(input);
-    return ((input[0] - 'A') * pow(10, len-1)) + ans; 
+    return ((input[0]-48) * pow(10, len-1)) + ans; 
 }
-void assignment8() {
+void assignment8(){
     char input[50];
     cin >> input;
     cout << stringToNumber(input) << endl;
 }
 
 /**
- *  Given a string S, compute recursively a new string where identical chars that are adjacent 
- *  in the original string are separated from each other by a "*".
+ *  Pair Star
+ *  -   Given a string S, compute recursively a new string where identical 
+ *      chars that are adjacent in the original string are separated from 
+ *      each other by a "*".
  */
 void pairStar(char input[]) {
     if(input[0] == '\0'){
@@ -211,31 +225,31 @@ void pairStar(char input[]) {
     pairStar(input+1);
     if(input[0] == input[1]){
         int len = strlen(input);
-        int i;
         input[len+1] ='\0';
+        int i;
         for( i=len;i>1; i--){
             input[i] = input[i-1];
         }
         input[i] = '*';
     }
 }
-void assignment9() {
-   char input[100];
-   cin.getline(input, 100);
-   pairStar(input);
-   cout << input << endl;
+void assignment9(){
+    char input[100];
+    cin.getline(input, 100);
+    pairStar(input);
+    cout << input << endl;
 }
 
 /**
- *  Tower of Hanoi is a mathematical puzzle where we have three rods and n disks. The objective of the
- *  puzzle is to move all disks from source rod to destination rod using third rod (say auxiliary). 
- *  The rules are :
- *  -   Only one disk can be moved at a time.
- *  -   A disk can be moved only if it is on the top of a rod.
- *  -   No disk can be placed on the top of a smaller disk.
- * 
- *  Print the steps required to move n disks from source rod to destination rod.
- *  Source Rod is named as 'a', auxiliary rod as 'b' and destination rod as 'c'.
+ *  Tower of Hanoi
+ *  -   Tower of Hanoi is a mathematical puzzle where we have three rods and n 
+ *      disks. The objective of the puzzle is to move all disks from source rod 
+ *      to destination rod using third rod (say auxiliary). The rules are :]
+ *      1.  Only one disk can be moved at a time.
+ *      2.  A disk can be moved only if it is on the top of a rod.
+ *      3.  No disk can be placed on the top of a smaller disk.
+ *  -   Print the steps required to move n disks from source rod to destination rod.
+ *  -   Source Rod is named as 'a', auxiliary rod as 'b' and destination rod as 'c'.
  */
 void towerOfHanoi(int n, char source, char auxiliary, char destination) {
     if(n==0){
@@ -249,23 +263,42 @@ void towerOfHanoi(int n, char source, char auxiliary, char destination) {
     cout << source << " " << destination << endl;
     towerOfHanoi(n-1, auxiliary , source , destination);
 }
-void assignment10() {
+void assignment10(){
     int n;
     cin >> n;
     towerOfHanoi(n, 'a', 'b', 'c');
 }
 
-int main(){
-    //assignment1();
-    //assignment2();
-    //assignment3();
-    //assignment4();
-    //assignment5();
-    assignment6();
-    //assignment7();
-    //assignment8();
-    //assignment9();
-    //assignment10();
+int main() {
+    // Multiplication (Recursive)
+    // assignment1();
+    
+    // Count Zeros
+    // assignment2();
+
+    // Geometric Sum
+    // assignment3();
+
+    // Check Palindrome (recursive)
+    // assignment4();
+    
+    // Sum of digits (recursive)
+    // assignment5();
+
+    // Replace pi (recursive)
+    // assignment6();
+
+    // Remove X
+    // assignment7();
+
+    // String to Integer
+    // assignment8();
+
+    // Pair Star
+    // assignment9();
+
+    // Tower of Hanoi
+    assignment10();
 
     return 0;
 }

@@ -28,8 +28,9 @@ void problem1(){
 }
 
 /**
- *  Write a program to find x to the power n (i.e. x^n). Take x and n from the user. 
- *  You need to return the answer. Do this recursively.
+ *  Power
+ *  -   Write a program to find x to the power n (i.e. x^n). Take x and n from the user. 
+ *  -   You need to return the answer. Do this recursively.
  */
 int power(int x, int n) {
     if(n==0){
@@ -46,7 +47,10 @@ void problem2(){
 }
 
 /**
- *  Given is the code to print numbers from 1 to n in increasing order recursively
+ *  Print Numbers:
+ *  -   Given is the code to print numbers from 1 to n in increasing order 
+ *      recursively. But it contains few bugs that you need to rectify such 
+ *      that all the test cases pass.
  */
 void print(int n){
     if(n == 1){
@@ -65,7 +69,10 @@ void problem3(){
 }
 
 /**
- *  Given the code to find out and return the number of digits present in a number recursively
+ *  Number of Digits:
+ *  -   Given the code to find out and return the number of digits present in a     
+ *      number recursively. But it contains few bugs, that you need to rectify 
+ *      such that all the test cases should pass.
  */
 int count(int n){
     if(n == 0){
@@ -129,7 +136,9 @@ void problem6(){
 }
 
 /**
- *  Given an array of length N, you need to find and return the sum of all elements of the array.
+ *  Sum of Array:
+ *  -   Given an array of length N, you need to find and return the sum of 
+ *      all elements of the array. Do it recursively.
  */
 int sum(int input[], int n) {
     if(n == 0){
@@ -150,8 +159,9 @@ void problem7(){
 }
 
 /**
- *  Given an array of length N and an integer x, you need to find if x is present in the array or not. 
- *  Return true or false.
+ *  Check Number
+ *  -   Given an array of length N and an integer x, you need to find if x is 
+ *      present in the array or not. Return true or false.
  */
 bool checkNumber(int input[], int size, int x) {
     if(size==0){
@@ -181,10 +191,12 @@ void problem8(){
 }
 
 /**
- *  Given an array of length N and an integer x, you need to find and return the 
- *  first index of integer x present in the array. Return -1 if it is not present in the array.
- *  First index means, the index of first occurrence of x in the input array.
- *  Do this recursively. Indexing in the array starts from 0.
+ *  First Index of Number
+ *  -   Given an array of length N and an integer x, you need to find and return the 
+ *      first index of integer x present in the array. Return -1 if it is not present 
+ *      in the array.
+ *  -   First index means, the index of first occurrence of x in the input array.
+ *  -   Do this recursively. Indexing in the array starts from 0.
  */
 int firstIndex(int input[], int size, int x) {
 	if(size == 0){
@@ -214,11 +226,14 @@ void problem9(){
 }
 
 /**
- *  Given an array of length N and an integer x, you need to find and return the last index of 
- *  integer x present in the array. Return -1 if it is not present in the array.
- *  Last index means - if x is present multiple times in the array, return the index at which 
- *  x comes last in the array. You should start traversing your array from 0, not from (N - 1).
- *  Do this recursively. Indexing in the array starts from 0. 
+ *  Last Index of Number
+ *  -   Given an array of length N and an integer x, you need to find and return 
+ *      the last index of integer x present in the array. Return -1 if it is not 
+ *      present in the array.
+ *  -   Last index means - if x is present multiple times in the array, return 
+ *      the index at which x comes last in the array. You should start traversing 
+ *      your array from 0, not from (N - 1).
+ *  -   Do this recursively. Indexing in the array starts from 0. 
  */
 int lastIndex(int input[], int size, int x) {
     if(size == 0){
@@ -247,15 +262,17 @@ void problem10(){
 }
 
 /**
- *  Given an array of length N and an integer x, you need to find all the indexes where x is 
- *  present in the input array. Save all the indexes in an array (in increasing order).
- *  Do this recursively. Indexing in the array starts from 0.
+ *  All Indices of Number
+ *  -   Given an array of length N and an integer x, you need to find all the 
+ *      indexes where x is present in the input array. Save all the indexes in 
+ *      an array (in increasing order).
+ *  -   Do this recursively. Indexing in the array starts from 0.
  */
-int allIndexes1(int input[], int size, int x, int output[]) {
+int allIndexes(int input[], int size, int x, int output[]) {
     if(size == 0){
         return 0;
     }
-    int ans = allIndexes1(input+1, size-1, x, output);
+    int ans = allIndexes(input+1, size-1, x, output);
     for(int i=0; i<ans; i++){
         output[i]++;
     }
@@ -289,7 +306,7 @@ void problem11(){
     int x;
     cin >> x;
     int *output = new int[n];
-    int size = allIndexes1(input, n, x, output);
+    int size = allIndexes(input, n, x, output);
     for(int i = 0; i < size; i++) {
         cout << output[i] << " ";
     }

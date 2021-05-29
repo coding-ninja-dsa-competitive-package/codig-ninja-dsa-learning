@@ -3,12 +3,13 @@
 using namespace std;
 
 /**
- *  Suppose you have a string, S, made up of only 'a's and 'b's. Write a recursive 
- *  function that checks if the string was generated using the following rules:
- *  a. The string begins with an 'a'
- *  b. Each 'a' is followed by nothing or an 'a' or "bb"
- *  c. Each "bb" is followed by nothing or an 'a'
- *  If all the rules are followed by the given string, return true otherwise return false.
+ *  Check AB
+ *  -   Suppose you have a string, S, made up of only 'a's and 'b's. Write a recursive 
+ *      function that checks if the string was generated using the following rules:
+ *      a. The string begins with an 'a'
+ *      b. Each 'a' is followed by nothing or an 'a' or "bb"
+ *      c. Each "bb" is followed by nothing or an 'a'
+ *      If all the rules are followed by the given string, return true otherwise return false.
  */
 bool check_ab(char input[], int startIndex) {
     if(input[startIndex] == '\0'){
@@ -41,9 +42,11 @@ void assignment1() {
 }
 
 /**
- *  A child is running up a staircase with N steps, and can hop either 1 step, 2 steps or 3 
- *  steps at a time. Implement a method to count how many possible ways the child can run up 
- *  to the stairs. You need to return number of possible ways W.
+ *  Staircase
+ *  -   A child is running up a staircase with N steps, and can hop either 
+ *      1 step, 2 steps or 3 steps at a time. Implement a method to count how 
+ *      many possible ways the child can run up to the stairs. You need to 
+ *      return number of possible ways W.
  */
 int staircase(int n){
     if(n ==0 || n==1){
@@ -65,7 +68,12 @@ void assignment2() {
 }
 
 /**
- *  Binary Search 
+ *  Binary Search (Recursive)
+ *  -   Given an integer sorted array (sorted in increasing order) and an 
+ *      element x, find the x in given array using binary search. Return the 
+ *      index of x.
+ *  -   Return -1 if x is not present in the given array.
+ *  Note : If given array size is even, take first mid.
  */
 int binary(int input[], int start, int end, int element){
     if(start > end){
@@ -95,13 +103,12 @@ void assignment3() {
 }
 
 /**
- *  Given an integer array (of length n), find and return all the subsets of input array.
- *  Subsets are of length varying from 0 to n, that contain elements of the array. But the order of 
- *  elements should remain same as in the input array.
+ *  Return subset of an array
+ *  -   Given an integer array (of length n), find and return all the subsets of 
+ *      input array.
+ *  -   Subsets are of length varying from 0 to n, that contain elements of the 
+ *      array. But the order of elements should remain same as in the input array.
  *  Note : The order of subsets are not important.
- *      Input format :
- *      Line 1 : Size of array
- *      Line 2 : Array elements (separated by space)
  */
 int subset(int input[], int n, int output[][20]) {
     if(n==0){
@@ -136,13 +143,12 @@ void assignment4() {
 }
 
 /**
- *  Given an integer array (of length n), find and print all the subsets of input array.
- *  Subsets are of length varying from 0 to n, that contain elements of the array. But the order 
- *  of elements should remain same as in the input array.
+ *  Print Subsets of Array
+ *  -   Given an integer array (of length n), find and print all the subsets 
+ *      of input array.
+ *  -   Subsets are of length varying from 0 to n, that contain elements of 
+ *      the array. But the order of elements should remain same as in the input array.
  *  Note : The order of subsets are not important. Just print the subsets in different lines.
- *  Input format :
- *      Line 1 : Integer n, Size of array
- *      Line 2 : Array elements (separated by space)
  */
 void printArray(int arr[], int size){
     for(int i=0; i<size; i++){
@@ -177,14 +183,12 @@ void assignment5() {
 }
 
 /**
- *  Given an array A of size n and an integer K, return all subsets of A which sum to K.
- *  Subsets are of length varying from 0 to n, that contain elements of the array. But the order of 
- *  elements should remain same as in the input array.
+ *  Return subsets sum to K
+ *  -   Given an array A of size n and an integer K, return all subsets of A 
+ *      which sum to K.
+ *  -   Subsets are of length varying from 0 to n, that contain elements of 
+ *      the array. But the order of elements should remain same as in the input array.
  *  Note : The order of subsets are not important.
- *  Input format :
- *      Line 1 : Integer n, Size of input array
- *      Line 2 : Array elements separated by space
- *      Line 3 : K 
  */
 int subsetSumToK(int input[], int n, int output[][50], int k) {
     if(n==0){
@@ -234,14 +238,11 @@ void assignment6() {
 }
 
 /**
- *  Given an array A and an integer K, print all subsets of A which sum to K.
- *  Subsets are of length varying from 0 to n, that contain elements of the array. But the order of 
- *  elements should remain same as in the input array.
+ *  Print Subset Sum to K
+ *  -   Given an array A and an integer K, print all subsets of A which sum to K.
+ *  -   Subsets are of length varying from 0 to n, that contain elements of 
+ *      the array. But the order of elements should remain same as in the input array.
  *  Note : The order of subsets are not important. Just print them in different lines.
- *  Input format :
- *      Line 1 : Size of input array
- *      Line 2 : Array elements separated by space
- *      Line 3 : K 
  */
 void subsetSumToK(int input[], int n, int output[], int m, int k){
     if(n==0){
@@ -273,8 +274,11 @@ void assignment7() {
 }
 
 /**
- *  Assume that the value of a = 1, b = 2, c = 3, ... , z = 26. You are given a numeric string S. 
- *  Write a program to return the list of all possible codes that can be generated from the given string.
+ *  Return all codes - String
+ *  -   Assume that the value of a = 1, b = 2, c = 3, ... , z = 26. You are 
+ *      given a numeric string S. 
+ *  -   Write a program to return the list of all possible codes that can be    
+ *      generated from the given string.
  */
 #include<string.h>
 int getCodes(string input, string output[10000]) {
@@ -312,8 +316,11 @@ void assignment8(){
 }
 
 /**
- *  Assume that the value of a = 1, b = 2, c = 3, ... , z = 26. You are given a numeric string S. 
- *  Write a program to print the list of all possible codes that can be generated from the given string.
+ *  Print all Codes - String
+ *  -   Assume that the value of a = 1, b = 2, c = 3, ... , z = 26. You are 
+ *      given a numeric string S. 
+ *  -   Write a program to print the list of all possible codes that can be 
+ *      generated from the given string.
  */
 #include <string.h>
 using namespace std;
@@ -346,9 +353,11 @@ void assignment9(){
 
 
 /**
- *  Given a string S, find and return all the possible permutations of the input string.
+ *  Return Permutations - String
+ *  -   Given a string S, find and return all the possible permutations of the input string.
  *  Note 1 : The order of permutations is not important.
- *  Note 2 : If original string contains duplicate characters, permutations will also be duplicates.
+ *  Note 2 : If original string contains duplicate characters, permutations 
+ *      will also be duplicates.
  */
 int returnPermutations(string input, string output[]){
    	if(input.size() == 0){
@@ -378,7 +387,9 @@ void assignment10(){
 }
 
 /**
- *  Given an input string (STR), find and return all possible permutations of the input string.
+ *  Print Permutations
+ *  -   Given an input string (STR), find and return all possible permutations 
+ *      of the input string.
  */
 void permutations(string input, string output){
     if(input.length() == 0){
@@ -401,16 +412,37 @@ void assignment11() {
 }
 
 int main(){
-    //assignment1();
-    //assignment2();
-    //assignment3();
-    //assignment4();
-    //assignment5();
-    //assignment6();
-    //assignment7();
-    //assignment8();
-    //assignment9();
-    //assignment10();
+    // Check AB
+    // assignment1();
+
+    // Staircase
+    // assignment2();
+
+    // Binary Search(Recursive)
+    // assignment3();
+
+    // Return subset of an array
+    // assignment4();
+
+    // Print subset of an array
+    // assignment5();
+
+    // Return subsets sum to K
+    // assignment6();
+
+    // Print subset sum to K
+    // assignment7();
+
+    // Return all codes - String 
+    // assignment8();
+
+    // Print all codes - String 
+    // assignment9();
+
+    // Return Permutations - String
+    // assignment10();
+
+    // Print Permutations
     assignment11();
 
     return 0;

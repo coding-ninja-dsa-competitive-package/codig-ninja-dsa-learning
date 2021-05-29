@@ -18,6 +18,10 @@ int* func2(){
     return &a;
 }
 
+/**
+ *  What is the output
+ *  Ans: 10 11
+ */
 void func3(int p){
     cout << p << " ";
 }
@@ -27,23 +31,24 @@ void problem1(){
     int &p = i;
     func3(p++);
     cout << i << endl; // 10 11
-    cout<<"========================"<<endl;
 }
 
-void func4(int i, int& j, int p){
+/**
+ *  What is the output
+ *  Ans : 10 7 10
+ */
+void func(int i, int& j, int p){
     i++;
     j++;
     p++;
 }
-
 void problem2(){
     int i = 10;
     int j = 6;
     int &p = i;
-    func4(i, j, p); //i will be unchanged, j will be changed as we are assigning to reference variable.
+    func(i, j, p); //i will be unchanged, j will be changed as we are assigning to reference variable.
                     // since we are assigning i to p in function so it will be copied & i will remain same.
     cout << i << " " << j << " " << p << endl;
-    cout<<"========================"<<endl;
 }
 
 int main(){

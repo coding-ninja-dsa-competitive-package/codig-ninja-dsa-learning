@@ -7,8 +7,8 @@ This project is about my course done from Coding Ninja platform for mastering th
 
 ## code examples 
 
-* 01-introduction-to-c++ : Contains all the assignments and teaching from course : Introduction to C++
-* 02-data-structure-algorithms : Contains all the assignments for mastering DSA. 
+* 01-introduction-to-c++ : Contains all the assignments and teaching notes from course : Introduction to C++
+* 02-data-structure-algorithms : Contains all the assignments for DSA course. 
 
 ---
 

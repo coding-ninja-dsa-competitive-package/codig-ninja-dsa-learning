@@ -269,6 +269,7 @@ void assignment3(){
  *      to the running list of integers, print the resulting median.
  *  -   Print only the integer part of the median.
  */
+#include<cmath>
 void printRunningMedian(int *arr, int n) {
     priority_queue<int> max_pq;
     priority_queue<int, vector<int>, greater<int> > min_pq;
@@ -281,7 +282,7 @@ void printRunningMedian(int *arr, int n) {
             min_pq.push(arr[i]);
         }
         
-        if(max_pq.size() - min_pq.size() > 1){
+        if(abs(max_pq.size() - min_pq.size() > 1)){
             if(max_pq.size() > min_pq.size()){
                 min_pq.push(max_pq.top());
                 max_pq.pop();

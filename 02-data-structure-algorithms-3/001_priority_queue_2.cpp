@@ -55,7 +55,7 @@ void kSortedArray(int arr[], int n, int k){
         j++;
     }
     while (!pq.empty()){
-        arr[j] = pq.top();
+        arr[j++] = pq.top();
         pq.pop();
     }
 }

@@ -212,7 +212,25 @@ bool hasPath(int** edges,int n, int v1, int v2, bool* visited){
     return false;
 }
 // Approach 2 - DFS
-
+bool hasPathDFS(int** edges,int n, int v1, int v2, bool* visited){
+    if(v1 == v2){
+        return true;
+    }
+    visited[v1] = true;
+    for(int i=0; i<n; i++){
+        if(i == v1){
+            continue;
+        }
+        if(edges[v1][i] == 1 && !visited[i]){
+            visited[i] = true;
+            bool ans = hasPathDFS(edges, n, i, v2, visited);
+            if(ans){
+                return true;
+            }
+        }
+    }
+    return false;
+}
 void problem3(){
     int v, e;
     cin >> v >> e;
@@ -237,10 +255,193 @@ void problem3(){
     }
     hasPath(edges, v, v1, v2, visited) ? cout << "true" : cout << "false";
     for(int i=0; i<v; i++){
+        visited[i] = false;
+    }
+    hasPathDFS(edges, v, v1, v2, visited) ? cout << "true" : cout << "false";
+    for(int i=0; i<v; i++){
         delete [] edges[i];
     }
     delete [] edges;
     delete [] visited;
+}
+
+/**
+ *  Code : Get Path - DFS
+ *  -   Given an undirected graph G(V, E) and two vertices v1 and v2(as integers), 
+ *      find and print the path from v1 to v2 (if exists). Print nothing if there 
+ *      is no path between v1 and v2.
+ *  -   Find the path using DFS and print the first path that you encountered.
+ *      1.  V is the number of vertices present in graph G and vertices are numbered 
+ *          from 0 to V-1. 
+ *      2.  E is the number of edges present in graph G.
+ *      3.  Print the path in reverse order. That is, print v2 first, then 
+ *          intermediate vertices and v1 at last.
+ *      4.  Save the input graph in Adjacency Matrix.
+ */ 
+vector<int> getPathDFS(vector<vector<int> > edges,int v, int v1,int v2,vector<bool> visited){
+    vector<int> path;
+    if(v1 == v2){
+        path.push_back(v1);
+        return path;
+    }
+    visited[v1] = true;
+    for(int i=0; i<v; i++){
+        if(i == v1){
+            continue;
+        }
+        if(edges[v1][i] == 1 && !visited[i]){
+            visited[i] = true;
+            vector<int> ans = getPathDFS(edges, v, i, v2, visited);
+            if(ans.size() > 0){
+                ans.push_back(v1);
+                return ans;
+            }
+        }
+    }
+    return path;
+}
+void problem4(){
+    int v, e;
+    cin >> v >> e;
+    vector<vector<int> > edges(v, vector<int>(v));
+    for(int i=0; i<e; i++){
+        int sv, lv;
+        cin >> sv >> lv;
+        edges[sv][lv] = 1;
+        edges[lv][sv] = 1;
+    }
+    int v1 , v2;
+    cin >> v1 >> v2;
+    vector<bool> visited(v, false);
+    // vector<int> path;
+    vector<int> path = getPathDFS(edges, v, v1, v2, visited);
+    for(int i=0; i<path.size(); i++){
+        cout << path[i] << " ";
+    }
+}
+
+/**
+ *  Code : Get Path - BFS
+ *  -   Given an undirected graph G(V, E) and two vertices v1 and v2 (as integers), 
+ *      find and print the path from v1 to v2 (if exists). Print nothing if there 
+ *      is no path between v1 and v2.
+ *  -   Find the path using BFS and print the shortest path available.
+ *  Note:
+ *  1.  V is the number of vertices present in graph G and vertices are numbered 
+ *      from 0 to V-1. 
+ *  2.  E is the number of edges present in graph G.
+ *  3.  Print the path in reverse order. That is, print v2 first, then intermediate 
+ *      vertices and v1 at last.
+ *  4.  Save the input graph in Adjacency Matrix.
+ */
+#include<unordered_map>
+#include<queue>
+#include<vector>
+vector<int> getPathBFS(vector<vector<int> > edges, int n, int v1, int v2, vector<bool> visited){
+    queue<int> q;
+    unordered_map<int, int> mp;
+    vector<int> res;
+    q.push(v1);
+    while(!q.empty()){
+        int f = q.front();
+        q.pop();
+        int i;
+        for(i=0; i<n; i++){
+            if((i != f) && (edges[f][i] == 1) && !visited[i]){
+                visited[i] = true;
+                q.push(i);
+                mp[i] = f;
+                cout << i << " " << f << endl;
+                if(i == v2){
+                    while(mp[i] != v1){
+                        res.push_back(i);
+                        i = mp[i];
+                    }
+                    res.push_back(i);
+                    res.push_back(mp[i]);
+                    return res;
+                }
+            }
+        }
+    }
+    return res;
+}
+void problem5(){
+    int v,e;
+    cin >> v >> e;
+    vector<vector<int> > edges(v, vector<int>(v));
+    for(int i=0; i<e; i++){
+        int sv, lv;
+        cin >> sv >> lv;
+        edges[sv][lv] = edges[lv][sv] = 1;
+    }
+    int v1, v2;
+    cin >> v1 >> v2;
+    cout << endl;
+    vector<bool> visited(v);
+    vector<int> path = getPathBFS(edges, v, v1, v2, visited);
+    for(int i=0; i<path.size(); i++){
+        cout << path[i] << " ";
+    }
+}
+
+/**
+ *  Code : Is Connected ?
+ *  -   Given an undirected graph G(V,E), check if the graph G is connected 
+ *      graph or not.
+ *  Note:
+ *  1.  V is the number of vertices present in graph G and vertices are numbered 
+ *      from 0 to V-1. 
+ *  2.  E is the number of edges present in graph G.
+ */
+void DFS(int** edges, int n, int start, vector<bool> & visited){
+    for(int i=0; i<n; i++){
+        if(i != start && edges[start][i] == 1 && !visited[i]){
+            visited[i] = true;
+            DFS(edges, n, i, visited);
+        }
+    }
+}
+void problem6(){
+    int v, e;
+    cin >> v >> e;
+    int** edges = new int*[v];
+    for(int i=0; i<v; i++){
+        edges[i] = new int[v];
+        for(int j=0; j<v; j++){
+            edges[i][j] = 0;
+        }
+    }
+    for(int i=0; i<e; i++){
+        int sv, lv;
+        cin >> sv >> lv;
+        edges[sv][lv] = edges[lv][sv] = 1;
+    }
+    vector<bool> visited(v);
+    visited[0] = true;
+    DFS(edges, v, 0, visited);
+    bool isConnected=true;
+    for(int i=0; i<v; i++){
+        if(!visited[i]){
+            isConnected = false;
+            break;
+        }
+    }
+    cout << endl;
+    isConnected ? cout << "true" << endl : cout << "false" << endl;
+}
+
+/**
+ *  Code : Is Connected ?
+ *  -   Given an undirected graph G(V,E), check if the graph G is connected 
+ *      graph or not.
+ *  Note:
+ *  1.  V is the number of vertices present in graph G and vertices are numbered 
+ *      from 0 to V-1. 
+ *  2.  E is the number of edges present in graph G.
+ */
+void problem7(){
+    
 }
 
 int main() {
@@ -251,7 +452,20 @@ int main() {
     // problem2();
 
     // Has Path
-    problem3();
+    // problem3();
+
+    // Get Path - DFS
+    // problem4();
+
+    // Get Path - BFS
+    // problem5();
+
+    // Is Connected
+    // problem6();
+
+    // Return all connected components
+    problem7();
+
 
     return 0;
 }

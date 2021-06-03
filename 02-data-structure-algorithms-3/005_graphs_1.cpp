@@ -58,6 +58,18 @@ using namespace std;
  *  -   Go wide until we can't go further i.e traverse breadth wise.
  *  -   For example : if A has 2 children B, C where B, C have further children.
  *      We will traverse both child first and then we will proceed to its children.
+ * 
+ *  Directed Graph:
+ *  ==============
+ *  -   Where element would have some direction.
+ *  -   In undirected graph, we use to edges[i][j] = edges[i][j] = 1, so here in
+ *      directed graph, we will need to only store edges[i][j] = 1
+ * 
+ *  Weighted Graphs:
+ *  ===============
+ *  -   Not all edges are equal i.e. weightage can be different.
+ *  -   Each edge can have different weightage i.e.
+ *          edges[i][j] = weight_of_edge
  */
 // Print nodes using DFS traversal - Adjacency Matrix - connected
 void printGraphDFS(int** edges, int n, int start,bool* visited){
@@ -278,7 +290,7 @@ void problem3(){
  *          intermediate vertices and v1 at last.
  *      4.  Save the input graph in Adjacency Matrix.
  */ 
-vector<int> getPathDFS(vector<vector<int> > edges,int v, int v1,int v2,vector<bool> visited){
+vector<int> getPathDFS(vector<vector<int> >& edges,int v, int v1,int v2,vector<bool> visited){
     vector<int> path;
     if(v1 == v2){
         path.push_back(v1);
@@ -432,16 +444,57 @@ void problem6(){
 }
 
 /**
- *  Code : Is Connected ?
- *  -   Given an undirected graph G(V,E), check if the graph G is connected 
- *      graph or not.
+ *  Code : All connected components
+ *  -   Given an undirected graph G(V,E), find and print all the connected 
+ *      components of the given graph G.
  *  Note:
  *  1.  V is the number of vertices present in graph G and vertices are numbered 
  *      from 0 to V-1. 
  *  2.  E is the number of edges present in graph G.
+ *  3.  You need to take input in main and create a function which should 
+ *      return all the connected components. And then print them in the main, 
+ *      not inside function.
+ *  Print different components in new line. And each component should be printed 
+ *  in increasing order (separated by space). Order of different components 
+ *  doesn't matter.
  */
+#include<algorithm>
+void getConnectedComponent(vector<vector<int> > & edges, int n,int start, 
+            vector<bool> & visited, vector<int> & res){
+    for(int i=0; i<n; i++){
+        if((i != start) && edges[start][i] == 1 && !visited[i]){
+            visited[i] = true;
+            res.push_back(i);
+            getConnectedComponent(edges, n, i, visited, res);
+        }
+    }
+}
+void returnAllConnectedComponents(vector<vector<int> > & edges, int n, vector<bool> & visited){
+    for(int i=0; i<n; i++){
+        if(!visited[i]){
+            vector<int> res;
+            res.push_back(i);
+            visited[i] = true;
+            getConnectedComponent(edges, n, i, visited, res);
+            sort(res.begin(), res.end());
+            for(int i=0; i<res.size(); i++){
+                cout << res[i] << " ";
+            }
+            cout << endl;
+        }
+    }
+}
 void problem7(){
-    
+    int v, e;
+    cin >> v >> e;
+    vector<vector<int> > edges(v, vector<int>(v));
+    for(int i=0; i<e; i++){
+        int sv, lv;
+        cin >> sv >> lv;
+        edges[sv][lv] = edges[lv][sv] = 1;
+    }
+    vector<bool> visited(v);
+    returnAllConnectedComponents(edges, v, visited);
 }
 
 int main() {

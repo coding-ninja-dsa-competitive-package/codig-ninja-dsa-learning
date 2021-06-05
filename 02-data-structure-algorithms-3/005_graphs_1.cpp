@@ -363,7 +363,7 @@ vector<int> getPathBFS(vector<vector<int> > edges, int n, int v1, int v2, vector
                 visited[i] = true;
                 q.push(i);
                 mp[i] = f;
-                cout << i << " " << f << endl;
+                // cout << i << " " << f << endl;
                 if(i == v2){
                     while(mp[i] != v1){
                         res.push_back(i);

@@ -484,14 +484,14 @@ void problem7(){
  *  Note: The input data will be such that there will always be a solution.
  */
 // Approach 1 - Brute Force - O(2^n)
-int solveHelper(string s, string v, int n, int m) {
+int shortestSubSeq(string s, string v, int n, int m) {
     if(n==0){
         return 1001;
     }
     if(m<=0){
         return 1;
     }
-    int ans1 = solveHelper(s.substr(1), v, n-1, m);
+    int ans1 = shortestSubSeq(s.substr(1), v, n-1, m);
     int i=0;
     for(; i<m; i++){
         if(v[i] == s[0]){
@@ -501,17 +501,17 @@ int solveHelper(string s, string v, int n, int m) {
     if(i == m){
         return 1;
     }
-    int ans2 = 1+solveHelper(s.substr(1), v.substr(i+1), n-1, m-i-1); 
+    int ans2 = 1+shortestSubSeq(s.substr(1), v.substr(i+1), n-1, m-i-1); 
     return min(ans1, ans2);
 }
 
-int solve(string s, string v){
+int shortestSubSeq(string s, string v){
     int n = s.length();
     int m = v.length();
-    return solveHelper(s, v, n, m);
+    return shortestSubSeq(s, v, n, m);
 }
 //	Approach 2 - Memoization
-int solveHelperRec(string s, string v, int n, int m, int **dp){
+int shortestSubSeqRec(string s, string v, int n, int m, int **dp){
     if (n == 0){
 		return 1001;
 	}
@@ -521,7 +521,7 @@ int solveHelperRec(string s, string v, int n, int m, int **dp){
     if(dp[n][m]>=0){
         return dp[n][m];
     }
-    int ans1=solveHelperRec(s.substr(1), v, n-1, m, dp);
+    int ans1=shortestSubSeqRec(s.substr(1), v, n-1, m, dp);
 	int i = 0;
 	for (; i < m; i++){
 		if (s[0] == v[i]){
@@ -531,11 +531,11 @@ int solveHelperRec(string s, string v, int n, int m, int **dp){
 	if (i == m){
 		return 1;
 	}
-    int ans2= 1 + solveHelperRec(s.substr(1), v.substr(i+1), n-1, m-i-1, dp);
+    int ans2= 1 + shortestSubSeqRec(s.substr(1), v.substr(i+1), n-1, m-i-1, dp);
     dp[n][m] = min(ans1, ans2);
     return dp[n][m];
 }
-int solve2(string s, string v){
+int shortestSubSeqRec(string s, string v){
     int n=s.length();
     int m=v.length();
 	int **dp=new int* [n+1];
@@ -545,7 +545,7 @@ int solve2(string s, string v){
             dp[i][j]=-1;
         }
     }
-    return solveHelperRec(s, v, n, m, dp);
+    return shortestSubSeqRec(s, v, n, m, dp);
     for(int i=0; i<s.length()+1; i++){
         delete[]dp[i];
     }
@@ -554,8 +554,8 @@ int solve2(string s, string v){
 void problem8(){
     string s, v;
     cin >> s >> v;
-    cout << solve(s, v);
-    cout << solve2(s, v);
+    cout << shortestSubSeq(s, v);
+    cout << shortestSubSeqRec(s, v);
 }
 
 int main() {

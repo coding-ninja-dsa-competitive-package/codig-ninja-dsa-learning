@@ -395,22 +395,62 @@ void assignment1(){
  *      2. Empty subset is a valid subset and has sum equal to zero.
  */
 #include<vector>
-int countSubsetSumToK(int* arr,int n,int sum, vector<int> &output){
+// Approach 1 - Recursion - Brute Force  
+int countSubsetSumToK(int* arr,int n,int sum){
     int count =0;
     if(n==0){
-        if(sum == 0){
+        if(sum==0){
             count++;
         }
         return count;
     }
-    int ans1 = countSubsetSumToK(arr+1, n-1, sum, output);
-    vector<int> res;
-    for(int i=0; i<output.size(); i++){
-        res.push_back(output[i]);
+    if(arr[n-1] > sum){
+        count += countSubsetSumToK(arr, n-1, sum);
+    } else {
+        count += countSubsetSumToK(arr, n-1, sum);
+        count += countSubsetSumToK(arr, n-1, sum-arr[n-1]);
     }
-    res.push_back(arr[0]);
-    int ans2 = countSubsetSumToK(arr+1, n-1, sum-arr[0], res);
-    return ans1+ans2;
+    return count;
+}
+// Approach 2 - Memoization
+int countSubsetSumToKRec(int* arr,int n,int sum, int** out){
+    int count =0;
+    if(n==0){
+        if(sum==0){
+            count++;
+        }
+        return count;
+    }
+    if(out[n][sum] != -1){
+        return out[n][sum];
+    }
+    if(arr[n-1] > sum){
+        count += countSubsetSumToKRec(arr, n-1, sum, out);
+    } else {
+        count += countSubsetSumToKRec(arr, n-1, sum, out);
+        count += countSubsetSumToKRec(arr, n-1, sum-arr[n-1], out);
+    }
+    out[n][sum] = count;
+    return count;
+}
+// Approach 3 - DP
+int countSubsetSumToKDP(int* arr,int n,int sum, int** out){
+    for(int i=0; i<=n; i++){
+        out[i][0] = 1;
+    }
+    for(int j=1; j<=sum; j++){
+        out[0][j] = 0;
+    }
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=sum; j++){
+            if(arr[i-1] > j){
+                out[i][j] = out[i-1][j];
+            } else {
+                out[i][j] = out[i-1][j] + out[i-1][j - arr[i-1]];
+            }
+        }
+    }
+    return out[n][sum];
 }
 void assignment2(){
     int t;
@@ -422,17 +462,31 @@ void assignment2(){
         for(int i=0; i<n; i++){
             cin >> arr[i];
         }
-        vector<int> output;
-        cout << countSubsetSumToK(arr, n, sum, output) << endl;
+        int** out = new int*[n+1];
+        for(int i=0; i<=n; i++){
+            out[i] = new int[sum+1];
+            for(int j=0; j<=sum; j++){
+                out[i][j] = -1;
+            }
+        }
+        cout << countSubsetSumToK(arr, n, sum) << endl;
+        cout << countSubsetSumToKRec(arr, n, sum, out) << endl;
+        cout << countSubsetSumToKDP(arr, n, sum, out) << endl;
+        for(int i=0; i<n; i++){
+            delete [] out[i];
+        }
+        delete [] arr;
+        delete [] out;
     }
 }
+
 
 int main() {
     // N Queens problem
     // problem1();
 
     // rat in a maze
-    problem2();
+    // problem2();
 
     // cross word
     // problem3();
@@ -441,7 +495,7 @@ int main() {
     // assignment1();
 
     // count subsets sum to k
-    // assignment2();
+    assignment2();
 
     return 0;
 }

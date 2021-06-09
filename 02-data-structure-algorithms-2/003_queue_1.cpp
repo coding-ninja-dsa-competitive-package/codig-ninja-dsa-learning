@@ -40,9 +40,9 @@ class QueueUsingArray{
             }
             delete data;
             data = newData;
-            capacity *= 2;
             firstIndex =0;
             nextIndex = capacity;
+            capacity *= 2;
         }
 
         void enqueue(T element){

@@ -57,7 +57,7 @@
 [011 - Binary Search - Recursive](./code-part-3/007-Binary-Search-Recursive.cpp)<br>
 [012 - Return Subsets of an Array](./code-part-3/008-Return-Subsets-Of-Array.cpp)<br>
 [013 - Print Subsets of an Array](./code-part-3/009-Print-Subsets-Of-Array.cpp)<br>
-[014 - Return Suubsets Sum to K](./code-part-3/010-Return-Subsets-Sum-To-K.cpp)<br>
+[014 - Return Subsets Sum to K](./code-part-3/010-Return-Subsets-Sum-To-K.cpp)<br>
 [015 - Print Subsets Sum to K](./code-part-3/011-Print-Subsets-Sum-To-K.cpp)<br>
 [016 - Return All Codes](./code-part-3/012-Return-All-Codes.cpp)<br>
 [017 - Print All Codes](./code-part-3/013-Print-All-Codes.cpp)<br>

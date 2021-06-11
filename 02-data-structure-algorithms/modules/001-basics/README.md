@@ -1,11 +1,11 @@
 #   Basic - Pointers & Dynamic Memory
 
->   ```Pointers``` are one of the most important aspects of C++. ```Pointers``` are another type of veriables which store the ```address``` of other variables.
+>   **Pointers** are one of the most important aspects of C++. **Pointers** are another type of veriables which store the **address** of other variables.
 
 ---
 
 ### Detailed Notes for Pointer
-[Click here for Pointers Notes](./assets/pointers.cpp)<br>
+[Click here for Pointers Notes](./assets/pointers.pdf)<br>
 
 ---
 

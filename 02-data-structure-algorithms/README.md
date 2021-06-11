@@ -2,9 +2,9 @@
   <h1 align="center">Data Structure & Algorithms</h1>
 </code>
 
->   This project is a must to learn for all the **Students** who are aiming for the ```Big Product Based Companies```. 
+>   This project is a must to learn for all the **Students/Professionals** who are aiming for the **Big Product Based Companies**. 
 
->   This project is modularised as per the structure from ```Coding Ninja``` platform. I highly recommend to follow it ```step-by-step``` and hope, you will be get the most out of it.
+>   This project is modularised as per the structure from **Coding Ninja** platform. I highly recommend to follow it **step-by-step** and hope, you will be get the most out of it.
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![GitHub stars](https://img.shields.io/github/stars/coding-ninja-dsa-competitive-package/codig-ninja-dsa-learning?style=for-the-badge&logo=github)](https://github.com/coding-ninja-dsa-competitive-package/stargazers) 
@@ -15,8 +15,8 @@
 
 ### Pre-Requisite 
 
->   You should be little bit aware of ```C++ language syntax``` like ```datatypes``` , ```loops``` , ```operators```, ```arrays``` . <br>
->   if not familiar with C++ . Check out the first module - [C++ Basics](../01-introduction-to-c++)<br>
+>   You should be little bit aware of **C++ language syntax** like **datatypes** , **loops** , **operators**, **arrays** . <br>
+>   if not familiar with **C++** . Check out the first course - [**C++ Basics**](../01-introduction-to-c++)<br>
 
 ---
 

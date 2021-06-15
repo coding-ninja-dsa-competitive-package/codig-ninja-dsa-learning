@@ -67,7 +67,7 @@ class Trie{
 
     void insert(Node* root, string word){
         if(word.empty()){
-            //root->isComplete = true;
+            root->isComplete = true;
             return;
         }
         int index = word[0]-'a';
@@ -89,28 +89,21 @@ class Trie{
             insert(root, word);
         }
 
-        void solve(string word, string pattern);
+        void autoComplete(string word, string pattern);
+        void autoComplete(Node* root, string word, string pattern);
 };
 
-void autoComplete(Node* root, string word, string pattern){
+void Trie::autoComplete(Node* root, string word, string pattern){
     if(word.empty()){
         if(root->isComplete){
             cout << pattern << endl;
         }
-        int count = 0;
         Node* child;
         for(int i=0; i<26; i++){
             child = root->children[i];
             if(child != NULL){
                 autoComplete(child, "", pattern+child->data);
-            } else {
-                count++;
             }
-        }
-        if(count != 26){
-            
-        } else {
-            cout << pattern << endl;
         }
         return;
     }
@@ -120,10 +113,11 @@ void autoComplete(Node* root, string word, string pattern){
         autoComplete(child, word.substr(1), pattern);
     } else {
         cout << "No suggestions" << endl;
+        insert(pattern);
     }
 }   
 
-void Trie::solve(string word, string pattern){
+void Trie::autoComplete(string word, string pattern){
     autoComplete(this->root, word, pattern);
 }
 
@@ -144,8 +138,7 @@ int main(){
     for(int i=0; i<q; i++){
         string query; 
         cin >> query; 
-        trie.solve(query, query);
-        trie.insert(query);
+        trie.autoComplete(query, query);
     }
     
     return 0;

@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Runner
+public class SpyAmongUs
 {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     public static void main(String[] args) throws IOException{
@@ -60,8 +60,21 @@ public class Runner
  */
 class Solution {
     static public int findMole(int N, int[][] trust) {
+        int [] in = new int[N];
+        int [] out = new int[N];
+        for(int i=0; i<trust.length; i++){
+            int outIdx = trust[i][0];
+            int inIdx = trust[i][1];
+            out[outIdx-1]++;
+            in[inIdx-1]++;
+        }
 
-        // Write your code here
-
+        for(int i=0; i<N; i++){
+            if(in[i] == N-1 && out[i] == 0){
+                return i+1;
+            }
+        }
+        return -1;
     }
+
 }

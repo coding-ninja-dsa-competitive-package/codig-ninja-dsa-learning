@@ -39,9 +39,6 @@ char flip(char c) {
 }
 
 int binarySequence(int N, int X) {
-    // string s="0";
-    // int idx = 1;
-    // string arr[N];
     string previous = "0";
     for(int i=1; i<N; i++){
         string str = previous;
@@ -51,16 +48,6 @@ int binarySequence(int N, int X) {
         }
         previous = str + compliment;
     }
-    // while(idx < N){
-    //     for(int i=0; i<s.length(); i+=2){
-    //         if(s[i] == '0'){
-    //             s = s.substr(0, i) + "01" + s.substr(i+1);
-    //         } else {
-    //              s = s.substr(0, i) + "10" + s.substr(i+1);
-    //         }
-    //     }
-    //     idx++;
-    // }
     return previous[X-1] - '0';
 }
 

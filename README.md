@@ -19,7 +19,7 @@ This project contains all the assignments and learning material from the Coding 
 
 **Course 1: [Introduction to C++](./01-introduction-to-c++)** - Completed <br>
 **Course 2: [Data Structures and Algorithms](./02-data-structure-algorithms)** - Completed <br>
-<!-- 3. **Course 3: [Competitive Programming](./03-competitive-programming)** - In Progress -->
+**Course 3: [Competitive Programming](./03-competitive-programming)** - In Progress
 
 ---
 

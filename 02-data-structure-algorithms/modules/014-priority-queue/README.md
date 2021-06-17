@@ -12,15 +12,15 @@
 
 ###  Which Data Structure could be best suited for PriorityQueue
  >        
-            DS              |   Insert  |  getMin/Max   |   removeMin/Max
-        -----------------------------------------------------------------
-        Array(unsorted)     |   O(1)    |   O(n)        |       O(n)
-        Array(sorted)       |   O(n)    |   O(1)        |       O(n)
-        LinkedList(unsorted)|   O(1)    |   O(n)        |       O(n)
-        LinkedList(sorted)  |   O(n)    |   O(1)        |       O(1)
-        BST                 |   O(h)    |   O(h)        |       O(h)
-        Balanced BST        |   O(logn) |   O(logn)     |       O(logn)
-        HashMap             |   O(1)    |   O(n)        |       O(n)
+|   DS                  |   Insert  |  getMin/Max   |   removeMin/Max   |
+| -----------------     | --------- | ------------- | ----------------- |  
+| Array(unsorted)       |   O(1)    |   O(n)        |       O(n)        |
+| Array(sorted)         |   O(n)    |   O(1)        |       O(n)        |
+| LinkedList(unsorted)  |   O(1)    |   O(n)        |       O(n)        |
+| LinkedList(sorted)    |   O(n)    |   O(1)        |       O(1)        |
+| BST                   |   O(h)    |   O(h)        |       O(h)        |
+| Balanced BST          |   O(logn) |   O(logn)     |       O(logn)     |
+| HashMap               |   O(1)    |   O(n)        |       O(n)        |
 
 -   Seeing above table , ```Balanced BST``` seems the best data structure for it.
 -   But we need to maintain :

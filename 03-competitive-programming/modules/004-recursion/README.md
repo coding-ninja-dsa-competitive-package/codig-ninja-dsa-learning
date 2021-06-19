@@ -16,7 +16,18 @@
 -   [Click here for Recursion](./assets/recursion.pdf)<br>
 
 ---
-## Problems - Part 2
-[001 - abc](./code/abc.cpp)<br>
+## Problems
+[001 - Factorial](./code/001-Factorial.cpp)<br>
+[002 - Power](./code/002-Power.cpp)<br>
+[003 - Print Numbers](./code/003-Print-Numbers.cpp)<br>
+[004 - Number of Digits](./code/004-Number-Of-Digits.cpp)<br>
+[005 - Fibonicci](./code/005-Fibonicci.cpp)<br>
+[006 - Guess Output - Assignments](./code/006-Guess-Output.cpp)<br>
+[007 - Check if Array is Sorted](./code/007-Check-If-Array-Sorted.cpp)<br>
+[008 - Sum of an Array](./code/008-Sum-Of-Array.cpp)<br>
+[009 - Check Number](./code/009-Check-Number.cpp)<br>
+[010 - First Index of Number](./code/010-First-Index-Of-Number.cpp)<br>
+[011 - Last Index of number](./code/011-Last-Index-Of-Number.cpp)<br>
+[012 - All Indices of Number](./code/012-All-indices-Of-Number.cpp)<br>
 
 ---

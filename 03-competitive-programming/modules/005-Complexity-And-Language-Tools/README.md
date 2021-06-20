@@ -36,3 +36,14 @@
 
 ---
 
+## Problems - Complexity + Language Tools
+
+[001 - Duplicate in Array](./code-part-3/001-Duplicate-In-Array.cpp)<br>
+[002 - Triplet Sum](./code-part-3/002-Triplet-Sum.cpp)<br>
+[003 - Rotate Array](./code-part-3/003-Rotate-Array.cpp)<br>
+[004 - Find Unique Element](./code-part-3/004-Find-Unique-Element.cpp)<br>
+[005 - Sum me Up](./code-part-3/005-Sum-Me-Up.cpp)<br>
+[006 - Pair Sum to Zero](./code-part-3/006-Pair-Sum-To-Zero.cpp)<br>
+[007 - Longest Consecutive Sequence](./code-part-3/007-Longest-Consecutive-Sequence.cpp)<br>
+
+---

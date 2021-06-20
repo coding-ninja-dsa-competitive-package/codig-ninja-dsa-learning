@@ -7,6 +7,9 @@
 ### Notes:
 
 [Click here for Time & Space Complexity Analysis](./assets/Time-Space-Complexity.pdf)<br>
+[Click here for Language Tools - C++](./assets/Language-Tools-C++.pdf)<br>
+[Click here for Language Tools - Java](./assets/Language-Tools-Java.pdf)<br>
+[Click here for Language Tools - Python](./assets/Language-Tools-Python.pdf)<br>
 
 ---
 
@@ -20,4 +23,16 @@
 
 ---
 
+## Problems - Language Tools (STL)
+
+[001 - Hussain Set - (COOK82C - CodeChef)](./code-part-2/001-Hussain-Set.cpp)<br>
+[002 - Descrepencies in the Voters - (VOTERS - CodeChef)](./code-part-2/002-Voters-List.cpp)<br>
+[003 - Permutation and Palindrome - (PERMPAL - CodeChef)](./code-part-2/003-Permutation-And-Palindrome.cpp)<br>
+[004 - abc](./code-part-2/abc.cpp)<br>
+[005 - abc](./code-part-2/abc.cpp)<br>
+[006 - abc](./code-part-2/abc.cpp)<br>
+[007 - abc](./code-part-2/abc.cpp)<br>
+[008 - abc](./code-part-2/abc.cpp)<br>
+
+---
 

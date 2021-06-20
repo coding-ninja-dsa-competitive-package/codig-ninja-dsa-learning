@@ -28,11 +28,11 @@
 [001 - Hussain Set - (COOK82C - CodeChef)](./code-part-2/001-Hussain-Set.cpp)<br>
 [002 - Descrepencies in the Voters - (VOTERS - CodeChef)](./code-part-2/002-Voters-List.cpp)<br>
 [003 - Permutation and Palindrome - (PERMPAL - CodeChef)](./code-part-2/003-Permutation-And-Palindrome.cpp)<br>
-[004 - abc](./code-part-2/abc.cpp)<br>
-[005 - abc](./code-part-2/abc.cpp)<br>
-[006 - abc](./code-part-2/abc.cpp)<br>
-[007 - abc](./code-part-2/abc.cpp)<br>
-[008 - abc](./code-part-2/abc.cpp)<br>
+[004 - Love for Characters](./code-part-2/004-Love-For-Characters.cpp)<br>
+[005 - Different Numbers](./code-part-2/005-Different-Names.cpp)<br>
+[006 - Extract Unique Characters](./code-part-2/006-Extract-Unique-Characters.cpp)<br>
+[007 - Warm Reception](./code-part-2/007-Warm-Reception.cpp)<br>
+[008 - Tell the Positions](./code-part-2/008-Tell-The-Positions.cpp)<br>
 
 ---
 

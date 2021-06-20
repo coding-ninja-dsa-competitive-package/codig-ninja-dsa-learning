@@ -62,3 +62,4 @@
 -   [002 - Pointers](./modules/002-pointers)<br>
 -   [003 - Dynamic Allocation](./modules/003-dynamic-allocation)<br>
 -   [004 - Recursion](./modules/004-recursion)<br>
+-   [005 - Complexity And Language Tools](./modules/005-Complexity-And-Language-Tools)<br>

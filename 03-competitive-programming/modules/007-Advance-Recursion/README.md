@@ -19,9 +19,9 @@
 [003 - Remove Duplicates Recursively](./code/003-Remove-Duplicates-Recursive.cpp)<br>
 [004 - Merge Sort](./code/004-Merge-Sort.cpp)<br>
 [005 - Quick Sort](./code/005-Quick-Sort.cpp)<br>
-[006 - Return Subsequences](./code/abc.cpp)<br>
-[007 - Return keypad Code](./code/abc.cpp)<br>
-[008 - Print Subsequences](./code/abc.cpp)<br>
-[009 - Print Keypad Combination](./code/abc.cpp)<br>
+[006 - Return Subsequences](./code/006-Return-Subsequences.cpp)<br>
+[007 - Return keypad Code](./code/007-Return-Keypad-Code.cpp)<br>
+[008 - Print Subsequences](./code/008-Print-SubSequences.cpp)<br>
+[009 - Print Keypad Combination](./code/009-Print-Keypad-Combination.cpp)<br>
 
 ---

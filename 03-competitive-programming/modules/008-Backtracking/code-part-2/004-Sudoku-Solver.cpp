@@ -77,10 +77,9 @@ bool sudokuSolver(int board[][9]){
 }
 
 int main() {
-    int n = 9;
     int board[9][9];
-    for (int i = 0; i < n; i++){
-        for (int j = 0; j < n; j++){
+    for (int i = 0; i < 9; i++){
+        for (int j = 0; j < 9; j++){
             cin >> board[i][j];
         }
     }

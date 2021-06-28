@@ -65,5 +65,6 @@
 -   [005 - Complexity And Language Tools](./modules/005-Complexity-And-Language-Tools)<br>
 -   [006 - Searching & Sorting](./modules/006-searching-sorting)<br>
 -   [007 - Advance Recursion](./modules/007-Advance-Recursion)<br>
+-   [008 - Backtracking](./modules/008-Backtracking)<br>
 
 ---

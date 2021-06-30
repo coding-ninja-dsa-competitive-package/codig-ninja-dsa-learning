@@ -66,5 +66,6 @@
 -   [006 - Searching & Sorting](./modules/006-searching-sorting)<br>
 -   [007 - Advance Recursion](./modules/007-Advance-Recursion)<br>
 -   [008 - Backtracking](./modules/008-Backtracking)<br>
+-   [009 - Bit Manipulation](./modules/009-Bit-Manipulation)<br>
 
 ---

@@ -1,6 +1,6 @@
 # Bit Manipulation 
 
-> Some time we can use **Bitwise Operators** to solve nay problem so reduce the time complexity by fractions. <br>
+> Sometimes, we can use **Bitwise Operators** to solve any problem so reduce the time complexity by fractions. <br>
 Ex. If we have to check whether the number is even or odd , we can use **&** operator.
 
 ---

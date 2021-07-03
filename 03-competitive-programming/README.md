@@ -67,5 +67,6 @@
 -   [007 - Advance Recursion](./modules/007-Advance-Recursion)<br>
 -   [008 - Backtracking](./modules/008-Backtracking)<br>
 -   [009 - Bit Manipulation](./modules/009-Bit-Manipulation)<br>
+-   [010 - Adhoc Problems](./modules/010-Adhoc-Problems)<br>
 
 ---

@@ -46,6 +46,7 @@ void problem3(){
 }
 
 int main() {
+    
     problem1();
     problem2();
     problem3();

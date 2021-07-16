@@ -27,7 +27,7 @@ void problem2() {
     int a[] = {1, 2, 3, 4};
     fun(a + 1);
     cout << a[0];
-}
+} 
 
 /**
  *  Pointers Output

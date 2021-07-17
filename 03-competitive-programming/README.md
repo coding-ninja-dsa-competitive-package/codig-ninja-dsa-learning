@@ -63,11 +63,11 @@
 -   [Dynamic Allocation](./modules/003-dynamic-allocation)<br>
 -   [Recursion](./modules/004-recursion)<br>
 -   [Complexity And Language Tools](./modules/005-Complexity-And-Language-Tools)<br>
--   [006 - Searching & Sorting](./modules/006-searching-sorting)<br>
--   [007 - Advance Recursion](./modules/007-Advance-Recursion)<br>
--   [008 - Backtracking](./modules/008-Backtracking)<br>
--   [009 - Bit Manipulation](./modules/009-Bit-Manipulation)<br>
--   [010 - Adhoc Problems](./modules/010-Adhoc-Problems)<br>
--   [011 - Modulo Arithmetic](./modules/011-Modulo-Arithmetic)<br>
+-   [Searching & Sorting](./modules/006-searching-sorting)<br>
+-   [Advance Recursion](./modules/007-Advance-Recursion)<br>
+-   [Backtracking](./modules/008-Backtracking)<br>
+-   [Bit Manipulation](./modules/009-Bit-Manipulation)<br>
+-   [Adhoc Problems](./modules/010-Adhoc-Problems)<br>
+-   [Modulo Arithmetic](./modules/011-Modulo-Arithmetic)<br>
 
 ---

@@ -58,11 +58,11 @@
 
 ## Modules:
 
--   [001 - Pre-Requisite](./modules/001-prerequisite)<br>
--   [002 - Pointers](./modules/002-pointers)<br>
--   [003 - Dynamic Allocation](./modules/003-dynamic-allocation)<br>
--   [004 - Recursion](./modules/004-recursion)<br>
--   [005 - Complexity And Language Tools](./modules/005-Complexity-And-Language-Tools)<br>
+-   [Pre-Requisite](./modules/001-prerequisite)<br>
+-   [Pointers](./modules/002-pointers)<br>
+-   [Dynamic Allocation](./modules/003-dynamic-allocation)<br>
+-   [Recursion](./modules/004-recursion)<br>
+-   [Complexity And Language Tools](./modules/005-Complexity-And-Language-Tools)<br>
 -   [006 - Searching & Sorting](./modules/006-searching-sorting)<br>
 -   [007 - Advance Recursion](./modules/007-Advance-Recursion)<br>
 -   [008 - Backtracking](./modules/008-Backtracking)<br>

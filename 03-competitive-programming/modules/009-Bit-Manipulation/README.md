@@ -4,7 +4,6 @@
 Ex. If we have to check whether the number is even or odd , we can use **&** operator.
 
 ---
-
 ## Problems
 
 [001 -  Bitwise Operators](./code/001-Bitwise-Operators.cpp)<br>

@@ -12,7 +12,6 @@
 [![Generic badge](https://img.shields.io/badge/language-c%2B%2B-yellowgreen?style=for-the-badge&logo=c%2B%2B)](GithubBadgeShields)
 
 ---
-
 ### Pre-Requisite 
 
 >   You should be little bit aware of **C++ language syntax** like **datatypes** , **loops** , **operators**, **arrays** . <br>

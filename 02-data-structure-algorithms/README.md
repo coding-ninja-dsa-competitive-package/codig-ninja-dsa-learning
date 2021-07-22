@@ -19,7 +19,6 @@
 >   if not familiar with **C++** . Check out the first course - [**C++ Basics**](../01-introduction-to-c++)<br>
 
 ---
-
 ## Modules:
 
 - [Basics of Pointers](./modules/001-basics)<br>

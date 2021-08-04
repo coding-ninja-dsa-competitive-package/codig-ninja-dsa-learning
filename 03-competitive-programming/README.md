@@ -69,5 +69,6 @@
 -   [Bit Manipulation](./modules/009-Bit-Manipulation)<br>
 -   [Adhoc Problems](./modules/010-Adhoc-Problems)<br>
 -   [Modulo Arithmetic](./modules/011-Modulo-Arithmetic)<br>
+-   [Dynamic Programming](./modules/012-Dynamic-Programming)<br>
 
 ---

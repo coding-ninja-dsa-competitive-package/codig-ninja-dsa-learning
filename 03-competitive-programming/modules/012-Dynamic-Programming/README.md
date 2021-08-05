@@ -10,5 +10,6 @@
 [006 - Coing Change Problem](./code-part-1/006-Coin-Change-Problem.cpp)<br>
 [007 - Minimum Cost Path](./code-part-1/007-Min-Cost-Dp.cpp)<br>
 [008 - Get Minimum Strength](./code-part-1/008-Get-Minimum-Strength.cpp)<br>
+[009 - Maximum Sum Rectangle](./code-part-1/009-Max-Sum-Rectangle.cpp)<br>
 
 ---

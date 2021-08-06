@@ -11,5 +11,7 @@
 [007 - Minimum Cost Path](./code-part-1/007-Min-Cost-Dp.cpp)<br>
 [008 - Get Minimum Strength](./code-part-1/008-Get-Minimum-Strength.cpp)<br>
 [009 - Maximum Sum Rectangle](./code-part-1/009-Max-Sum-Rectangle.cpp)<br>
-[010 - Construct the Array](./code-part-1/010-Construct-Array.cpp)<br>
+[010 - Construct the Array - Hackerrank](./code-part-1/010-Construct-Array.cpp)<br>
+[011 - Sam and substring - Hackerrank](./code-part-1/011-Sam-And-Substring.cpp)<br>
+
 ---

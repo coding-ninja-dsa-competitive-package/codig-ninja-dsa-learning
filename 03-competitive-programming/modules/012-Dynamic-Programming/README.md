@@ -15,3 +15,14 @@
 [011 - Sam and substring - Hackerrank](./code-part-1/011-Sam-And-Substring.cpp)<br>
 
 ---
+
+# Assignment - 1
+
+[001 - Loot Houses](./code-part-2/001-Loot-Houses.cpp)<br>
+[002 - Max Square with all zeros](./code-part-2/002-Max-squares-with-all-zeros.cpp)<br>
+[003 - Count BSTs](./code-part-2/003-Cont-BSTs.cpp)<br>
+[004 - Boredom](./code-part-2/004-Boredom.cpp)<br>
+[005 - Minimum number of choclates](./code-part-2/005-Min-Number-Of-Choclates.cpp)<br>
+[006 - Minimum count](./code-part-2/006-Minimum-Count.cpp)<br>
+
+---

@@ -1,6 +1,6 @@
 # Dynamic Programming
 
-# Problems 
+### Problems 
 
 [001 - Fibonicci](./code-part-1/001-Fibonicci.cpp)<br>
 [002 - Alpha Code](./code-part-1/002-AlphaCode.cpp)<br>
@@ -16,7 +16,7 @@
 
 ---
 
-# Assignment - 1
+### Assignment - 1
 
 [001 - Loot Houses](./code-part-2/001-Loot-Houses.cpp)<br>
 [002 - Max Square with all zeros](./code-part-2/002-Max-squares-with-all-zeros.cpp)<br>

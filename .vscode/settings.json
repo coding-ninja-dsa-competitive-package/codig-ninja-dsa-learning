@@ -5,6 +5,7 @@
         "ios": "cpp",
         "locale": "cpp",
         "ostream": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "algorithm": "cpp"
     }
 }

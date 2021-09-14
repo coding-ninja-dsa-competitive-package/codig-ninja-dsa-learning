@@ -26,3 +26,13 @@
 [006 - Minimum count](./code-part-2/006-Minimum-Count.cpp)<br>
 
 ---
+
+### Assignment - 2
+
+[001 - Hasan and Trip](./code-part-2/007-Hasan-And-Trip.cpp)<br>
+[002 - Vanya and GCD](./code-part-2/008-Vanya-And-GCD.cpp)<br>
+[003 - Adjacent Bit Counts](./code-part-2/009-Adjacent-Bit-Counts.cpp)<br>
+[004 - Roy and Coin Boxes](./code-part-2/010-Roy-And-Coin-Boxes.cpp)<br>
+[005 - Jon Snow and his Favourite Number](./code-part-2/011-Jon-Snow-And-Fav-Number.cpp)<br>
+[006 - Alyona and Spreadsheet](./code-part-2/012-Alyona-And-Spreadsheet.cpp)<br>
+[007 - Angry Children](./code-part-2/013-Angry-Children.cpp)<br>

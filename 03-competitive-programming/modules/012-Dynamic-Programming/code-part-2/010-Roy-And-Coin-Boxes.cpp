@@ -46,7 +46,10 @@ using namespace std;
  */ 
 
 int main(){
+    //disable the synchronization between the C and C++ standard streams
     ios_base::sync_with_stdio(false);
+    //unties cin from cout. Tied streams ensure that one stream is flushed 
+    //automatically before each I/O operation on the other stream.
 	cin.tie(NULL);
     
     int numCoinBoxes;

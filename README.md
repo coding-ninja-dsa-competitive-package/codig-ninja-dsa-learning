@@ -2,7 +2,7 @@
   <h1 align="center">Coding Ninjas Premium - DSA & Competitive Programming</h1>
 </code>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/coding-ninja-dsa-competitive-package/codig-ninja-dsa-learning?color=skyblue&logo=github&style=for-the-badge)](GithubBadgeShields) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/coding-ninja-dsa-competitive-package/codig-ninja-dsa-learning?color=skyblue&logo=github&style=for-the-badge)](GithubBadgeShields) 
 [![GitHub last commit](https://img.shields.io/github/last-commit/coding-ninja-dsa-competitive-package/codig-ninja-dsa-learning?style=for-the-badge&logo=git&color=green)](GithubBadgeShields) 
 [![GitHub stars](https://img.shields.io/github/stars/coding-ninja-dsa-competitive-package/codig-ninja-dsa-learning?color=orange&logo=github&style=for-the-badge)](GithubBadgeShields) 
 [![GitHub forks](https://img.shields.io/github/forks/coding-ninja-dsa-competitive-package/codig-ninja-dsa-learning?color=orange&logo=github&style=for-the-badge)](GithubBadgeShields)

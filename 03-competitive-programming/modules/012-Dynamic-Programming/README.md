@@ -36,3 +36,24 @@
 [005 - Jon Snow and his Favourite Number](./code-part-2/011-Jon-Snow-And-Fav-Number.cpp)<br>
 [006 - Alyona and Spreadsheet](./code-part-2/012-Alyona-And-Spreadsheet.cpp)<br>
 [007 - Angry Children](./code-part-2/013-Angry-Children.cpp)<br>
+
+---
+# Dynamic Programming 2 
+
+### Problems
+
+[001 - Longest Common Subsequence (LCS)](./code-part-3/001-LCS.cpp)<br>
+[002 - Edit Distance](./code-part-3/002-Edit-Distance.cpp)<br>
+[003 - Balika Vadhu](./code-part-3/003-Balika-Vadhu.cpp)<br>
+[004 - Knapsack](./code-part-3/004-knapsack.cpp)<br>
+[005 - PARTY](./code-part-3/005-Party.cpp)<br>
+[006 - Subset Sum](./code-part-3/006-Subset-Sum.cpp)<br>
+
+### Assignment
+[001 - Miser Man](./code-part-3/007-Miser-Man.cpp)<br>
+[002 - Trader Profit](./code-part-3/008-Trader-Profit.cpp)<br>
+[003 - Charlie and Pilots](./code-part-3/009-Charlie-And-Pilots.cpp)<br>
+[004 - Square Brackets](./code-part-3/010-Square-Brackets.cpp)<br>
+[005 - Distinct Subsequence](./code-part-3/011-Distinct-Subsequence.cpp)<br>
+[006 - Smaller Super-Sequence](./code-part-3/012-Smallest-Super-Sequence.cpp)<br>
+[007 - Shortest Subsequence](./code-part-3/013-Shortest-Subsequence.cpp)<br>

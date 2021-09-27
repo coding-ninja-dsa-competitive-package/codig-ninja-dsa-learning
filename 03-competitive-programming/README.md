@@ -70,5 +70,7 @@
 -   [Adhoc Problems](./modules/010-Adhoc-Problems)<br>
 -   [Modulo Arithmetic](./modules/011-Modulo-Arithmetic)<br>
 -   [Dynamic Programming](./modules/012-Dynamic-Programming)<br>
+-   [Greedy Problems](./modules/013-Greedy-Problems)<br>
+-   [Segment Trees](./modules/014-Segment-Trees)<br>
 
 ---

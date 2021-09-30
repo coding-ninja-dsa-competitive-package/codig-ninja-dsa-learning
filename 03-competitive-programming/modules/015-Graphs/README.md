@@ -45,11 +45,11 @@
 
 ### Problems - Advance Graphs
 
-[001 - Connected Components](./code-part-3/abc.cpp)<br>
-[002 - Permutation Swaps](./code-part-3/abc.cpp)<br>
-[003 - Connected Horses](./code-part-3/abc.cpp)<br>
-[004 - Strongle Connected Components](./code-part-3/abc.cpp)<br>
-[005 - Dominos](./code-part-3/abc.cpp)<br>
-[006 - BOTTOM](./code-part-3/abc.cpp)<br>
-[007 - Bipartite Graph](./code-part-3/abc.cpp)<br>
-[008 - FILLMTR](./code-part-3/abc.cpp)<br>
+[001 - Connected Components](./code-part-3/001-Connected-Components.cpp)<br>
+[002 - Permutation Swaps](./code-part-3/002-Permutation-Swaps.cpp)<br>
+[003 - Connected Horses](./code-part-3/003-Connected-Horses.cpp)<br>
+[004 - Strongle Connected Components](./code-part-3/004-Strongly-Connected-Components.cpp)<br>
+[005 - Dominos](./code-part-3/005-Dominos.cpp)<br>
+[006 - BOTTOM](./code-part-3/006-BOTTOM.cpp)<br>
+[007 - Bipartite Graph](./code-part-3/007-Bipartite-Graph.cpp)<br>
+[008 - FILLMTR](./code-part-3/008-FILLMTR-Fill-Matrix.cpp)<br>

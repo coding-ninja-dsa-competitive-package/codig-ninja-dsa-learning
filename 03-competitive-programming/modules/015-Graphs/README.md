@@ -53,3 +53,10 @@
 [006 - BOTTOM](./code-part-3/006-BOTTOM.cpp)<br>
 [007 - Bipartite Graph](./code-part-3/007-Bipartite-Graph.cpp)<br>
 [008 - FILLMTR](./code-part-3/008-FILLMTR-Fill-Matrix.cpp)<br>
+[009 - Monk and the Islands](./code-part-3/009-Monk-and-the-Islands.cpp)<br>
+[010 - Kingdom of Monkeys](./code-part-3/010-Kingdom-Of-Monkeys.cpp)<br>
+[011 - New Year Transportation](./code-part-3/011-New-Year-Transportation.cpp)<br>
+[012 - AIRPORTS](./code-part-3/012-AIRPORTS.cpp)<br>
+[013 - Edges in MST](./code-part-3/013-Edges-In-MST.cpp)<br>
+
+---

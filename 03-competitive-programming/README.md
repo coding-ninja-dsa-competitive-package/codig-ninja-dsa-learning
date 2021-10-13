@@ -69,8 +69,16 @@
 -   [Bit Manipulation](./modules/009-Bit-Manipulation)<br>
 -   [Adhoc Problems](./modules/010-Adhoc-Problems)<br>
 -   [Modulo Arithmetic](./modules/011-Modulo-Arithmetic)<br>
--   [Dynamic Programming](./modules/012-Dynamic-Programming)<br>
+-   [Dynamic Programming, Dynamic Programming 2](./modules/012-Dynamic-Programming)<br>
 -   [Greedy Problems](./modules/013-Greedy-Problems)<br>
 -   [Segment Trees](./modules/014-Segment-Trees)<br>
+-   [Graphs 1, Graphs 2, Advance Graphs](./modules/015-Graphs)<br>
+-   [String Algorithms](./modules/016-String-Algorithms)<br>
+-   [Tries](./modules/017-Tries)<br>
+-   [Fenwick Tree](./modules/018-Fenwick-Tree)<br>
+-   [DP and Bitmasking](./modules/019-DP-And-Bitmasking)<br>
+-   [Number Theory 1, Applications Of NT - 1](./modules/020-Number-Theory-1)<br>
+-   [Number Theory 2](./modules/021-Number-Theory-2)<br>
+-   [Number Theory 3](./modules/022-Number-Theory-3)<br>
 
 ---

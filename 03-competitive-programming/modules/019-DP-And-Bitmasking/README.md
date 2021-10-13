@@ -1,7 +1,4 @@
 # DP and Bitmasking
-
----
-
 ### Problems
 
 [001 - Minimum Job Cost](./code/001-Minimum-Job-Cost.cpp)<br>

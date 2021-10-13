@@ -1,7 +1,5 @@
 # Trie 
 
----
-
 ### Problems
 
 [001 - XOR Maximum Pair](./code/001-XOR-Maximum-Pair.cpp)<br>

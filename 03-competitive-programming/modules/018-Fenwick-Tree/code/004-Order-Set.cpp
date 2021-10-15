@@ -43,9 +43,9 @@ using namespace std;
 
 #define MAX 200005
 
-pair<int, int> M[MAX], T[MAX];
-int binaryIndexTree[MAX], arr[MAX], n;
-char oper[MAX];
+pair<int, int> M[SIZE], T[SIZE];
+int binaryIndexTree[SIZE], arr[SIZE], n;
+char oper[SIZE];
 bool flag;
 
 int query(int idx){
@@ -57,7 +57,7 @@ int query(int idx){
 }
 
 void update(int idx, int val){
-    for (;idx < MAX; idx += idx & (-idx)){
+    for (;idx < SIZE; idx += idx & (-idx)){
         binaryIndexTree[idx] += val;
     }
 }
@@ -130,7 +130,7 @@ int main(){
             idx = -1;
             bool isValid = 0;
             start = 1;
-            end = MAX - 1;
+            end = SIZE - 1;
             while (start <= end) {
                 mid = (start + end)/2;
                 if (query(mid) == k && query(mid - 1) != k) {

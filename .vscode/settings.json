@@ -6,6 +6,9 @@
         "locale": "cpp",
         "ostream": "cpp",
         "random": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "vector": "cpp",
+        "functional": "cpp",
+        "iostream": "cpp"
     }
 }

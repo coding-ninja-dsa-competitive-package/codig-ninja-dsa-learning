@@ -80,5 +80,8 @@
 -   [Number Theory 1, Applications Of NT - 1](./modules/020-Number-Theory-1)<br>
 -   [Number Theory 2](./modules/021-Number-Theory-2)<br>
 -   [Number Theory 3](./modules/022-Number-Theory-3)<br>
+-   [Game Theory](./modules/023-Game-Theory)<br>
+-   [Computational Geometry](./modules/024-Computational-Geometry)<br>
+-   [FFT](./modules/025-FFT)<br>
 
 ---

@@ -4,6 +4,12 @@
 
 --- 
 
+## Notes
+
+[Click here for Advanced Recursion](./assets/Advanced-Recursion.pdf)<br>
+
+---
+
 ### How does Recursion Works?
 -   We can define the steps of recursion solution as follows:
     1.  ```Base Case``` : terminating condition at which function call will stop.

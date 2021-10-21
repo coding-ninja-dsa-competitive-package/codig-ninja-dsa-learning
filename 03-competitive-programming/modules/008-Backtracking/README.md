@@ -4,6 +4,12 @@
 
 --- 
 
+## Notes
+
+[Click here for Backtracking](./assets/Backtracking.pdf)<br>
+
+---
+
 ## Problems - Backtracking
 
 [001 - nQueens](./code-part-1/001-nQueens.cpp)<br>

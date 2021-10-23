@@ -1,5 +1,11 @@
 # Adhoc Problems
 
+## Notes
+
+[Click here for Adhoc Problems](./assets/Adhoc-Problems.pdf)<br>
+
+---
+
 ## Problems
 
 [001 - Equalize](./code/001-Equalize.cpp)<br>

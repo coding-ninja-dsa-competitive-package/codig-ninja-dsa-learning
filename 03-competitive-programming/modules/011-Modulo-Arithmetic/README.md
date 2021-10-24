@@ -8,6 +8,13 @@
 
 ---
 
+## Notes
+
+[Click here for Modulo Arithmetic](./assets/Modulo-Arithmetic.pdf)<br>
+
+---
+
+
 ### Modulo Properties
 
 1.  (a+b) % c   =>  ((a%c) + (b%c)) % c

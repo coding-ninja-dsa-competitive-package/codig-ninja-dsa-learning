@@ -1,5 +1,13 @@
 # Dynamic Programming
 
+
+## Notes
+
+[Click here for Dynamic Programming 1](./assets/Dynamic-Programming-1.pdf)<br>
+[Click here for Dynamic Programming 2](./assets/Dynamic-Programming-2.pdf)<br>
+
+---
+
 ### Problems 
 
 [001 - Fibonicci](./code-part-1/001-Fibonicci.cpp)<br>

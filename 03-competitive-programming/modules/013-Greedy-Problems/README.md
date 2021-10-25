@@ -1,5 +1,12 @@
 # Greedy Problems
 
+
+## Notes
+
+[Click here for Greedy Problems](./assets/Greedy-Problems.pdf)<br>
+
+---
+
 ### Problems 
 
 [001 - Minimum Absolute Difference in an Array](./code/001-Min-Absolute-Diff-In-An-Array.cpp)<br>

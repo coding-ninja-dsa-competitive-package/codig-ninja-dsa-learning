@@ -1,5 +1,12 @@
 # Segment Trees
 
+
+## Notes
+
+[Click here for Segment Trees](./assets/Segment-Trees.pdf)<br>
+
+---
+
 ### Problems 
 
 [001 - Segment Tree Basic Operations](./code/001-Segment-Tree-Operations.cpp)<br>

@@ -9,7 +9,11 @@
 
 ---
 
-### Read more about Graphs - [Click Here](./../../../02-data-structure-algorithms/modules/018-graphs/README.md)<br>
+## Notes
+
+[Click here for Graphs 1](./assets/Graphs-1.pdf)<br>
+[Click here for Graphs 2](./assets/Graphs-2.pdf)<br>
+[Click here for Advance Graphs](./assets/Advance-Graphs.pdf)<br>
  
 ---
 

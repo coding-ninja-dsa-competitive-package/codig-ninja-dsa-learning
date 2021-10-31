@@ -1,5 +1,12 @@
 # Trie 
 
+
+## Notes
+
+[Click here for Tries](./assets/Tries.pdf)<br>
+
+---
+
 ### Problems
 
 [001 - XOR Maximum Pair](./code/001-XOR-Maximum-Pair.cpp)<br>

@@ -1,5 +1,12 @@
 # String Algorithms
 
+
+## Notes
+
+[Click here for String Algorithms](./assets/String-Algorithms.pdf)<br>
+
+---
+
 ### Problems 
 
 [001 - Pattern Matching - Naive Approach](./code/001-Pattern-Matching-Naive.cpp)<br>

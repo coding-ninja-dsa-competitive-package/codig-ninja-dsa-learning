@@ -1,4 +1,10 @@
 # DP and Bitmasking
+
+## Notes
+
+[Click here for DP and Bitmasking](./assets/DP-And-Bitmasking.pdf)<br>
+
+---
 ### Problems
 
 [001 - Minimum Job Cost](./code/001-Minimum-Job-Cost.cpp)<br>

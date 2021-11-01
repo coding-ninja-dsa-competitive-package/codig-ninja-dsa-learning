@@ -5,6 +5,13 @@
 
 ---
 
+## Notes
+
+[Click here for Fenwick Tree](./assets/Fenwick-Tree.pdf)<br>
+
+---
+
+
 ### Problems
 
 [001 - Fenwick Tree Operations](./code/001-Fenwick-Tree-Oper.cpp)<br>

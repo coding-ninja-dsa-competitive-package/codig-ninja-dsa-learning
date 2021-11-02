@@ -1,5 +1,12 @@
 # Number Theory - 1
 
+## Notes
+
+[Click here for Number Theory 1](./assets/Number-Theory-1.pdf)<br>
+[Click here for Applications of NT 1](./assets/Number-Theory-2.pdf)<br>
+
+---
+
 ### Problems 
 
 [001 - Find Prime Numbers From 1 to N](./code-part-1/001-Find-Prime-Numbers-1-to-N.cpp)<br>

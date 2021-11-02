@@ -10,6 +10,12 @@
         "vector": "cpp",
         "functional": "cpp",
         "iostream": "cpp",
-        "complex": "cpp"
+        "complex": "cpp",
+        "utility": "cpp",
+        "atomic": "cpp",
+        "chrono": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "set": "cpp"
     }
 }

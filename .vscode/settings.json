@@ -17,5 +17,6 @@
         "iterator": "cpp",
         "memory": "cpp",
         "set": "cpp"
-    }
+    },
+    "workbench.colorTheme": "IntelliJ Light"
 }

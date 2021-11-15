@@ -98,6 +98,8 @@ void print(Node *head){
 
 Node *deleteNode(Node *head, int pos){
     Node* temp = head;
+    if(head == NULL)
+	return NULL; 
     if(pos == 0){
         head = head->next;
         delete temp;

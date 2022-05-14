@@ -42,9 +42,8 @@ int countZeros(int n) {
    int ans = countZeros(n/10);
    if(n%10 == 0){
        return ans+1;
-   } else{
-       return ans;
    }
+   return ans;
 }
 
 int main() {

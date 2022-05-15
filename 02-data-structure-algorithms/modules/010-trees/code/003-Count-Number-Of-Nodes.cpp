@@ -63,8 +63,7 @@ TreeNode<int>* takeInputLevelOrder(){
  */
 int countNodes(TreeNode<int>* root){
     if(root == NULL){
-        return 0;
-        
+        return 0;    
     }
     int ans = 1;
     for(int i=0; i<root->children.size(); i++){
@@ -76,6 +75,5 @@ int countNodes(TreeNode<int>* root){
 int main(){
     TreeNode<int>* root = takeInputLevelOrder();
     cout << countNodes(root) << endl;
-
     return 0;
 }

@@ -20,6 +20,6 @@
     },
     "workbench.colorTheme": "Default Dark+",
     "java.project.sourcePaths": [
-        "08-curated-interview-dsa-problems-java/modules/030-custom-problems"
+        "."
     ]
 }

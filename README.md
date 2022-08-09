@@ -18,7 +18,12 @@ This project contains all the assignments and learning material from the Coding 
 
 **Course 1: [Introduction to C++](./01-introduction-to-c++)** - Completed <br>
 **Course 2: [Data Structures and Algorithms](./02-data-structure-algorithms)** - Completed <br>
-**Course 3: [Competitive Programming](./03-competitive-programming)** - In Progress
+**Course 3: [Competitive Programming](./03-competitive-programming)** - Completed <br>
+**Course 4: [Aptitude](./04-aptitude)** - Completed <br>
+**Course 5: [Introduction to OS](./05-introduction-to-os)** - Completed <br>
+**Course 6: [System Design](./06-system-design)** - Completed <br>
+**Course 7: [Introduction to DBMS](./07-Introduction-to-DBMS)** - Completed <br>
+**Course 8: [Curated Interview DSA Problems](./08-curated-interview-dsa-problems-java)** - In Progress <br>
 
 ---
 

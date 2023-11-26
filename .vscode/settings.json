@@ -21,5 +21,6 @@
     "workbench.colorTheme": "Default Dark+",
     "java.project.sourcePaths": [
         "."
-    ]
+    ],
+    "cph.general.saveLocation": ""
 }

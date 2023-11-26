@@ -2,9 +2,9 @@
   <h1 align="center">Introduction to C++</h1>
 </code>
 
->   This project will a brief understanding of basic syntax of **C++** programming. 
+>   This project will give a brief understanding of basic syntax of **C++** programming. 
 
->   This project is modularised as per the structure from **Coding Ninja** platform. I highly recommend to follow it **step-by-step** and hope, you will be get the most out of it.
+>   This project is modularised as per the structure from **Coding Ninja** platform. I highly recommend to follow it **step-by-step** and hope, you will get the most out of it.
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![GitHub stars](https://img.shields.io/github/stars/coding-ninja-dsa-competitive-package/codig-ninja-dsa-learning?color=orange&logo=github&style=for-the-badge)](GithubBadgeShields) 

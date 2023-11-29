@@ -16,7 +16,8 @@
         "chrono": "cpp",
         "iterator": "cpp",
         "memory": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "streambuf": "cpp"
     },
     "workbench.colorTheme": "Default Dark+",
     "java.project.sourcePaths": [

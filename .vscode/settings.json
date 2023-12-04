@@ -18,7 +18,8 @@
         "memory": "cpp",
         "set": "cpp",
         "streambuf": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "queue": "cpp"
     },
     "workbench.colorTheme": "Default Dark+",
     "java.project.sourcePaths": [

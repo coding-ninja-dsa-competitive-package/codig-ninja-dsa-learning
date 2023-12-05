@@ -19,7 +19,8 @@
         "set": "cpp",
         "streambuf": "cpp",
         "string": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "stack": "cpp"
     },
     "workbench.colorTheme": "Default Dark+",
     "java.project.sourcePaths": [
